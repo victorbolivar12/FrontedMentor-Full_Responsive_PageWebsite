@@ -1,0 +1,361 @@
+:root{
+   /*----Colores Primario-----*/
+   --LightRed:hsl(356, 100%, 66%);
+   --VeryLighRed_hoverEfect:hsl(355, 100%, 74%);
+   --VeryDarkBlue_Headings:hsl(208, 49%, 24%);
+   --VeryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+   --VeryDarkGrayBlue:hsl(237, 17%, 21%);
+}
+
+body{
+    background:#fbfbfb;
+    color: #000;
+    font-size: 16px;
+}
+
+/*-----------------------Header--------------------------------*/
+.container-buton{
+    display: none;
+}
+.header{
+    width: 100%;
+    height: 37.5em;
+    background-image: linear-gradient(to left,rgba(255, 82, 93,.9),rgba(255, 102, 115,.9)),url("file:///C:/Users/User/Documents/HTML,CSS.JAVASCRIP/Proyectos%20Tipo%20Porfolio/FrontedMentor-Full%20Responsive%20Page%20Website/imagenes/bg-pattern-intro.png");
+    background-size:2500px;
+    background-position:10%;
+    border-bottom-left-radius: 70px;
+}
+
+.logo{
+    margin: 3.125em 0.9375em 1.25em 7.5em;
+    width: 5.625em;
+    height: 2.5em;
+}
+
+.container{
+    display: flex;
+}
+
+.menu{
+    margin: 0;
+    display: flex;
+}
+
+.menu_principal{
+    list-style: none;
+    display: flex;
+    margin-top: 3.75em;
+}
+
+
+.menu_principal a{
+    margin: 0.625rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.menu_secundario{
+    display: none;
+}
+.mn-3{
+    height: 130px;
+    width: 130px;
+    list-style: none;
+    background:#fbfbfb;
+    border-radius: 5px;
+    margin: 15px;
+    margin-left: -10px;
+    box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.mn-3 li{
+    margin: 18px;
+}
+
+.mn-3 a{
+    color: #000;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: -25px;
+}
+.mn-3 a:hover{
+    font-weight: 700;
+}
+
+
+.menu_principal a i{
+    margin: 0.312em;
+}
+
+.container-buton-usuario{
+    display: inline-block;
+    position: absolute;
+    margin: 3.75em;
+    justify-content: space-between;
+    left: 75%;
+}
+
+.button-usuario{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 3.125rem;
+    padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
+}
+
+.button-usuario:hover{
+    background: var(--VeryLighRed_hoverEfect);
+}
+
+.text-box{
+    position: relative;
+    text-align: center;
+    color: #fbfbfb;
+    margin: 5.625rem;
+    font-size: 1.875em;
+}
+.title{
+    font-weight: 200;
+    font-size: 70px;
+}
+.subtitle{
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.container-button{
+    text-align: center;
+}
+
+.hero-boton{
+    margin: 0.625rem;
+    text-decoration: none;
+    color: #fbfbfb;
+    font-size: 1.25em;
+    background:var(--VeryLighRed_hoverEfect);
+    padding: 0.93rem;
+    border-radius: 50px;
+}
+
+.hero-boton:hover{
+    background: #fbfbfb;
+    color: var(--LightRed);
+}
+
+
+/*-----------------------Responsive Dising Header--------------------------------*/
+
+@media screen and (max-width: 375px){
+    
+    /*-------------Header---------------*/
+    .header{
+        height: 600px;
+        background-size: 1500px;
+        background-position:40% 50%;
+    }
+
+    .container-buton{
+        display: block;
+        transform: translate(70% ,85%) scale(.8);
+    }
+
+    .logo{
+        margin:0px 30px;/* Arriba | Derecha | Abajo | Izquierda */
+    }
+   
+    .menu{
+        display: none;
+    }
+    .container-buton-usuario{
+        display: none;
+    }
+
+    .text-box{
+        margin: 100px 40px 70px 40px;
+        font-size: 12px;
+    }
+    
+    .hero-boton{
+        background: transparent;
+        border: solid 1px #fbfbfb;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .subtitle{
+        font-size: 18px;
+        font-weight: 200;
+    }
+}
+
+/*-----------------------Seccion1--------------------------------*/
+.main-information{
+    margin-left: 5.625em;
+    margin-bottom: 200px;
+}
+
+.container-infomation-section1{
+    display: flex;
+    overflow: hidden;
+}
+
+.main-title{
+    text-align: center;
+    color: var(--VeryDarkBlue_Headings);
+    margin-top: 7.5em;
+}
+
+.container-box-text{
+    width: 50%;
+    margin-left: 130px;
+}
+
+.secondary-degree{
+    color: var(--VeryDarkBlue_Headings);
+    margin: 3.125em 1.25em 1.875em 0em ;/* Arriba | Derecha | Abajo | Izquierda */
+}
+
+.information{
+    line-height: 1.875rem;
+    margin-bottom: 6.25rem;
+    font-size: 1em;
+    width: 500px;
+}
+
+.image{
+    height: 900px;
+    position: absolute;
+}
+.box-img{
+    position: relative;
+    bottom: 70px;
+    left: 54%;
+}
+
+
+/*-----------------------Responsive Dising Seccion1--------------------------------*/
+@media screen and (max-width: 375px){
+    .container-infomation{
+        display: block;
+    }
+
+    .image{
+        display: none;
+    }
+    
+    .image-mobile{
+        display: block;
+    
+    }
+}
+
+
+/*-----------------------Seccion2--------------------------------*/
+.mobile-section{
+    width: 100%;
+    height: 25em;
+    display: flex;
+    background: var(--VeryDarkGrayBlue);
+    background-image:url("file:///C:/Users/User/Documents/HTML,CSS.JAVASCRIP/Proyectos%20Tipo%20Porfolio/FrontedMentor-Full%20Responsive%20Page%20Website/images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 62.5em;
+    background-position: -18.75em -31.25em;
+    border-top-right-radius: 6.25em;
+    border-bottom-left-radius: 6.25em;
+    margin-bottom: 15.625em;
+}
+
+.container-box-text-mobile{
+    position: relative;
+    left: 18%;
+    top: 25%;
+}
+
+.img-mobile-box{
+    position: relative;
+    left: 10%;
+    bottom: 18%;
+}
+
+.image-mobile{
+    height: 36.25em;
+}
+
+.title-section-mobile{
+    color: #fbfbfb;
+}
+
+.information-mobile{
+    color: #fbfbfb;
+    width: 31.25em;
+    line-height: 1.875em;   
+}
+
+/*-----------------------Seccion3--------------------------------*/
+.laptop-secction{
+    display: flex;
+    margin-top: 10.625em;
+}
+
+.image-laptop{
+    height: 46.875em;
+    transform: translate(-16.25em, -6.25em);
+}
+
+.container-box-text-laptop{
+    width: 80%;
+    position: relative;
+    right: 15%;
+}
+
+p{
+    color: var(--VeryDarkGrayBlue);
+}
+
+/*-----------------------Footer--------------------------------*/
+.footer{
+    background: var(--VeryDarkGrayBlue);
+    border-top-right-radius: 6.25em;
+    height: 25em;
+}
+
+.footer__container{
+    display: flex;
+}
+
+.footer__content{
+    margin: 3.125em 9.375em;
+}
+
+.footer__title{
+    color: #fbfbfb;
+    font-size: 1em;
+    margin-bottom: 2.5rem;
+}
+
+.footer__list{
+    list-style: none;
+    margin-bottom: 1.25em;
+}
+
+.footer__link{
+    color:aliceblue;
+    text-decoration: none;
+    margin-left: -2.5em;
+}
+
+.footer__link:hover{
+    text-decoration:underline;
+}
+
+
+
